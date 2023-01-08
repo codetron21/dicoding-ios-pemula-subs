@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		183681B22969B44C0071305D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681B12969B44C0071305D /* AppDelegate.swift */; };
 		183681B42969B44C0071305D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681B32969B44C0071305D /* SceneDelegate.swift */; };
-		183681B62969B44C0071305D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681B52969B44C0071305D /* ViewController.swift */; };
-		183681B92969B44C0071305D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183681B72969B44C0071305D /* Main.storyboard */; };
+		183681B62969B44C0071305D /* ListAndroidVersionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681B52969B44C0071305D /* ListAndroidVersionController.swift */; };
 		183681BB2969B44D0071305D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 183681BA2969B44D0071305D /* Assets.xcassets */; };
 		183681BE2969B44D0071305D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 183681BC2969B44D0071305D /* LaunchScreen.storyboard */; };
+		183681C62969B4E00071305D /* AndroidVersionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681C52969B4E00071305D /* AndroidVersionModel.swift */; };
+		183681C8296A7FF60071305D /* AndroidVersionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681C7296A7FF60071305D /* AndroidVersionCell.swift */; };
+		183681CA296A964E0071305D /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681C9296A964E0071305D /* AboutViewController.swift */; };
+		183681CC296A967B0071305D /* DetailAndroidVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183681CB296A967B0071305D /* DetailAndroidVersionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		183681AE2969B44C0071305D /* AndroidVersionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AndroidVersionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		183681B12969B44C0071305D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		183681B32969B44C0071305D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		183681B52969B44C0071305D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		183681B82969B44C0071305D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		183681B52969B44C0071305D /* ListAndroidVersionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListAndroidVersionController.swift; sourceTree = "<group>"; };
 		183681BA2969B44D0071305D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		183681BD2969B44D0071305D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		183681BF2969B44D0071305D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183681C52969B4E00071305D /* AndroidVersionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidVersionModel.swift; sourceTree = "<group>"; };
+		183681C7296A7FF60071305D /* AndroidVersionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidVersionCell.swift; sourceTree = "<group>"; };
+		183681C9296A964E0071305D /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		183681CB296A967B0071305D /* DetailAndroidVersionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAndroidVersionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +64,14 @@
 			children = (
 				183681B12969B44C0071305D /* AppDelegate.swift */,
 				183681B32969B44C0071305D /* SceneDelegate.swift */,
-				183681B52969B44C0071305D /* ViewController.swift */,
-				183681B72969B44C0071305D /* Main.storyboard */,
+				183681B52969B44C0071305D /* ListAndroidVersionController.swift */,
 				183681BA2969B44D0071305D /* Assets.xcassets */,
 				183681BC2969B44D0071305D /* LaunchScreen.storyboard */,
 				183681BF2969B44D0071305D /* Info.plist */,
+				183681C52969B4E00071305D /* AndroidVersionModel.swift */,
+				183681C7296A7FF60071305D /* AndroidVersionCell.swift */,
+				183681C9296A964E0071305D /* AboutViewController.swift */,
+				183681CB296A967B0071305D /* DetailAndroidVersionViewController.swift */,
 			);
 			path = AndroidVersionApp;
 			sourceTree = "<group>";
@@ -127,7 +136,6 @@
 			files = (
 				183681BE2969B44D0071305D /* LaunchScreen.storyboard in Resources */,
 				183681BB2969B44D0071305D /* Assets.xcassets in Resources */,
-				183681B92969B44C0071305D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				183681B62969B44C0071305D /* ViewController.swift in Sources */,
+				183681CA296A964E0071305D /* AboutViewController.swift in Sources */,
+				183681CC296A967B0071305D /* DetailAndroidVersionViewController.swift in Sources */,
+				183681C8296A7FF60071305D /* AndroidVersionCell.swift in Sources */,
+				183681C62969B4E00071305D /* AndroidVersionModel.swift in Sources */,
+				183681B62969B44C0071305D /* ListAndroidVersionController.swift in Sources */,
 				183681B22969B44C0071305D /* AppDelegate.swift in Sources */,
 				183681B42969B44C0071305D /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		183681B72969B44C0071305D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				183681B82969B44C0071305D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		183681BC2969B44D0071305D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,9 +295,8 @@
 				INFOPLIST_FILE = AndroidVersionApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,9 +321,8 @@
 				INFOPLIST_FILE = AndroidVersionApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
