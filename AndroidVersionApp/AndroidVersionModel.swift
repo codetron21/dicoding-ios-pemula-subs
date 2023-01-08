@@ -13,7 +13,7 @@ struct AndroidVersionModel {
     let id: Int
     let versionName: String
     let logo: UIImage?
-    let description: String
+    let description: String?
     let releaseDate: String
     let features: [String]
     let sources:String
@@ -23,7 +23,7 @@ let androidVersionsData = [
     AndroidVersionModel(
         id: 1,
         versionName: "Android 1.0",
-        logo: nil,
+        logo: UIImage(named: "ic_android"),
         description: "Android 1.0, the first commercial version of the software, was released on September 23, 2008. The first commercially available Android device was the HTC Dream",
         releaseDate: "September 23, 2008",
         features: [
@@ -36,7 +36,7 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:1,
         versionName: "Android 1.1",
-        logo:nil,
+        logo: UIImage(named: "ic_android"),
         description: "On February 9, 2009, the Android 1.1 update was released, initially for the HTC Dream only. Android 1.1 was known as \"Petit Four\" internally, though this name was not used officially",
         releaseDate: "February 9, 2009",
         features: [
@@ -50,7 +50,7 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:3,
         versionName: "Android 1.5 Cupcake",
-        logo:nil,
+        logo:UIImage(named: "ic_android_cupcake"),
         description: "On April 27, 2009, the Android 1.5 update was released, based on Linux kernel 2.6.27. This was the first release to officially use a codename based on a dessert item (\"Cupcake\"), a theme used for all releases until Android Pie, with Android 10 using a number-only system.",
         releaseDate: "April 27, 2009",
         features: [
@@ -63,7 +63,7 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:4,
         versionName: "Android 1.6 Donut",
-        logo:nil,
+        logo: UIImage(named: "ic_android_donut"),
         description: "On September 15, 2009, Android 1.6 – dubbed Donut – was released, based on Linux kernel 2.6.29",
         releaseDate: "September 15, 2009",
         features: [
@@ -75,7 +75,7 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:5,
         versionName: "Android 2.0 Eclair",
-        logo:nil,
+        logo: UIImage(named: "ic_android_eclair"),
         description: "On October 27, 2009, the Android 2.0 SDK was released, based on Linux kernel 2.6.29 and codenamed Eclair.",
         releaseDate: "October 27, 2009",
         features: [
@@ -87,8 +87,8 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:6,
         versionName: "Android 2.0.1 Eclair",
-        logo:nil,
-        description: "",
+        logo: UIImage(named: "ic_android_eclair"),
+        description: nil,
         releaseDate: "December 3, 2009",
         features: [
             "Minor API changes, bug fixes and framework behavioral changes."
@@ -98,8 +98,8 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:7,
         versionName: "Android 2.1 Eclair",
-        logo:nil,
-        description: "",
+        logo: UIImage(named: "ic_android_eclair"),
+        description: nil,
         releaseDate: "January 11, 2010",
         features: [
             "Minor amendments to the API and bug fixes."
@@ -109,7 +109,7 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:8,
         versionName: "Android 2.2 Froyo",
-        logo:nil,
+        logo:UIImage(named: "ic_android_froyo"),
         description: "On May 20, 2010, the SDK for Android 2.2 (Froyo, short for frozen yogurt) was released, based on Linux kernel 2.6.32.",
         releaseDate: "May 20, 2010",
         features: [
@@ -122,7 +122,7 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:9,
         versionName: "Android 2.3 Gingerbread",
-        logo:nil,
+        logo:UIImage(named: "ic_android_ginger"),
         description: "On December 6, 2010, the Android 2.3 (Gingerbread) SDK was released, based on Linux kernel 2.6.35.",
         releaseDate: "December 6, 2010",
         features: [
@@ -135,8 +135,8 @@ let androidVersionsData = [
     AndroidVersionModel(
         id:10,
         versionName: "Android 2.3.3 Gingerbread",
-        logo:nil,
-        description: "",
+        logo:UIImage(named: "ic_android_ginger"),
+        description: nil,
         releaseDate: "February 9, 2011",
         features: [
             "Several improvements and API fixes."

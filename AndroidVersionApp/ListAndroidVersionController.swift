@@ -102,6 +102,15 @@ class ListAndroidVersionController: UIViewController {
 }
 
 extension ListAndroidVersionController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailViewController = DetailAndroidVersionViewController()
+        detailViewController.androidVerModel = androidVersionsData[indexPath.row]
+        let viewController = UINavigationController(rootViewController:detailViewController)
+        viewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+        present(viewController, animated: true, completion: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         
     }

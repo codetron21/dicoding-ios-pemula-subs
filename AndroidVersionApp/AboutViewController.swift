@@ -61,6 +61,8 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.isHidden = true
+        
         buildView()
         
         backImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(backAction)))
